@@ -1,16 +1,18 @@
 #Get the required params
 [CmdletBinding()]
 param(
-  [Parameter(Mandatory=$true)]
+  [Parameter(Mandatory=$true,
+    HelpMessage="Enter Token")]
   [String]$Token,
 
-  [Parameter(Mandatory=$true)]
-  [String]$Username,
+  [Parameter(HelpMessage="Enter Username")]
+  [String]$Username="ZoltaJu",
 
-  [Parameter(Mandatory=$true)]
-  [String]$Repo,
+  [Parameter(HelpMessage="Enter Repo")]
+  [String]$Repo="Scripts",
 
-  [Parameter(Mandatory=$true)]
+  [Parameter(Mandatory=$true,
+    HelpMessage="Enter Filename")]
   [String]$Filename
 )
 
