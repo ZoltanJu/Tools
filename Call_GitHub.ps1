@@ -1,4 +1,5 @@
 #Get the required params
+read-host Token
 [CmdletBinding()]
 param(
   [Parameter(Mandatory=$true,
