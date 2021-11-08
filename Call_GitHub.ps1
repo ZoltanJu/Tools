@@ -6,7 +6,7 @@ param(
   [String]$Token,
 
   [Parameter(HelpMessage="Enter Username")]
-  [String]$Username="ZoltaJu",
+  [String]$Username="ZoltanJu",
 
   [Parameter(HelpMessage="Enter Repo")]
   [String]$Repo="Scripts",
