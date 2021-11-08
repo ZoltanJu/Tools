@@ -3,7 +3,7 @@
 param(
   [Parameter(Mandatory=$true,
     HelpMessage="Enter Token")]
-  [String]$Token,
+  [String]$arg1,
 
   [Parameter(HelpMessage="Enter Username")]
   [String]$Username="ZoltanJu",
@@ -13,8 +13,11 @@ param(
 
   [Parameter(Mandatory=$true,
     HelpMessage="Enter Filename")]
-  [String]$Filename
+  [String]$arg2
 )
+
+$Token=$arg1
+$FileName=$arg2
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
