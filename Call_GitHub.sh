@@ -4,6 +4,7 @@ stty -echo
 printf Token:
 read token
 stty echo
+printf "\n"
 if [ "$1"x != "x" ]; then
         FileName=$1
 else
