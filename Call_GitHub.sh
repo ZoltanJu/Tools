@@ -1,7 +1,9 @@
 #!/bin/sh
 
-echo Token:
+stty -echo
+printf Token:
 read token
+stty echo
 if [ "$1"x != "x" ]; then
         FileName=$1
 else
